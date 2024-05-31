@@ -5,7 +5,7 @@ var sock = null;
 new_conn = function (){
     var options = {protocols_whitelist: ['websocket', 'xdr-streaming', 'xhr-streaming', 'iframe-eventsource', 'xdr-polling', 'xhr-polling'], debug: true, jsessionid: false, server_heartbeat_interval: 4000, heartbeatTimeout: 2000};
     //sock = new SockJS('//'+stream+':443/echo', null, options);
-    sock = new SockJS(stream+'/echo', null, options);
+    sock = new SockJS(stream+'', null, options);
     //sock = new SockJS('');
     // managing heartbeats
     var heartbeat, death;
